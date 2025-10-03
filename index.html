@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+v<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stanislav's Resume</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f0f2f5;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
     }
 
     .resume-container {
@@ -22,7 +23,6 @@
       padding: 20px;
       max-width: 900px;
       width: 90%;
-      overflow-y: auto;
     }
 
     h1 {
@@ -41,8 +41,7 @@
 
     iframe {
       width: 100%;
-      min-height: 600px;
-      height: 80vh;
+      height: 100vh;
       border: none;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -77,7 +76,7 @@
       }
 
       iframe {
-        height: 60vh;
+        height: 100vh;
       }
     }
   </style>
