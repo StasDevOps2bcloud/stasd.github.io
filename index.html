@@ -5,32 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stanislav's Resume</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f0f2f5;
       display: flex;
       justify-content: center;
       align-items: center;
+      min-height: 100vh;
     }
-
-    .pdf-wrapper {
-      width: 90vw;
-      max-width: 880px;
-      max-height: 1700px;
-      height: 90vh;
+    .resume-container {
+      background: #fff;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       border-radius: 10px;
-      background-color: white;
-    }
-
-    iframe {
-      width: calc(100% + 20px);
-      height: calc(100% + 380px);
-      border: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 900px;
+      width: 90%;
     }
     h1 {
       text-align: center;
@@ -42,57 +32,31 @@
       margin-bottom: 10px;
       color: #331;
     }
+    iframe {
+      width: 100%;
+      height: 1300px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
     p {
       text-align: center;
-      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      iframe {
+        height: 600px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="pdf-wrapper">
+  <div class="resume-container">
     <h1>Greetings!</h1>
     <h2>Below you can find my resume file</h2>
-    <iframe src="resume.pdf">
-    </iframe>
+    <iframe src="resume.pdf"></iframe>
     <p>
       If you are visiting from a mobile device, <a href="resume.pdf" download>click here to download the resume file</a>.
     </p>
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
