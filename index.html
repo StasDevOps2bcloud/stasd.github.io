@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stanislav's Resume</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      padding: 0;
+      height: 100%;
+      width: 100%;
     }
-    .resume-container {
+
+    .pdf-container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,16 +20,7 @@
       width: 100vw;
       background-color: #f0f2f5;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #332;
-    }
-    h2  {
-      text-align: center;
-      margin-bottom: 10px;
-      color: #331;
-    }
+
     iframe {
       width: 90%;
       height: auto;
@@ -40,31 +29,11 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       border-radius: 10px;
     }
-    p {
-      text-align: center;
-    }
-    @media (max-width: 768px) {
-      iframe {
-        height: 600px;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="resume-container">
-    <h1>Greetings!</h1>
-    <h2>Below you can find my resume file</h2>
+  <div class="pdf-container">
     <iframe src="resume.pdf"></iframe>
-    <p>
-      If you are visiting from a mobile device, <a href="resume.pdf" download>click here to download the resume file</a>.
-    </p>
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
