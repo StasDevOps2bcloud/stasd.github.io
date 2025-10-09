@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="preload" as="image" href="background.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stanislav's Resume</title>
+  <link rel="preload" as="image" href="background.jpg">
+  <meta charset="UTF-8">
+  <title>Automation Scripting Portfolio</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-image: url('background.jpg');
+      padding: 0;
+      background-color: #f0f2f5;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
     }
-    .resume-container {
+
+    .greetings-glass {
       background: rgba(255, 255, 255, 0.2);
       color: #fff;
       font-size: 3rem;
       font-family: 'Dancing Script', sans-serif;
       text-align: center;
-      padding: 0.3rem 0.3rem;
-      margin: 0.3rem 0.3rem;
+      padding: 0.2rem 0.2rem;
+      margin: 0.2rem 0.2rem;
       margin-bottom: 1rem;
       margin-top: 1rem;
       padding-top: 0;
@@ -32,66 +37,72 @@
       border: 2px solid rgba(255, 255, 255, 0.3);
       border-radius: 5px;
     }
-    h1 {
-      text-align: center;
-      margin-top: 2px;
-      margin-bottom: 10px;
-      color: #332;
+    
+    .container {
+      background-color: transparent;
+      padding: 1em;
+      margin-top: 0;
+      padding-top: 0;
+      border-radius: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 1100px;
+      width: 100%;
     }
-    h2  {
+
+ h1,h2 {
       text-align: center;
-      margin-top: 2px;
-      margin-bottom: 10px;
-      color: #331;
-    }
-    iframe {
-      width: 101%;
-      height: 1300px;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    p {
-      text-align: center;
+      margin-bottom: 0.1em;
+      margin-top: 0.1em;
+      color: #FDF5E6;
+ }
+
+    .subtext {
       font-family: 'sans-serif';
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: black;
       margin-top: 0.5rem;
       margin-bottom: 0;
       text-align: center;
     }
-    @media (max-width: 768px) {
-      iframe {
-        height: 600px;
-      }
+
+    .pdf-viewer {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .description {
+      margin: 0.5em 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="resume-container">
-    <h1>Greetings!</h1>
-    <h2>Below you can find my resume file</h2>
-    <iframe src="resume.pdf"></iframe>
-    <p>
-      If you are visiting from a mobile device, <a href="resume.pdf" download>click here to download the resume file</a>.
-    </p>
+  <div class="container">
+    
+    <div class="greetings-glass">
+      <h1>Greetings,</h1>
+      <h2>Below you can find my Automation Scripting Portfolio</h2>
+      <p class="subtext">This page is being maintained by Stanislav Dubrovskiy (stasd@outlook.co.il). All scripts were developed while working in 2bcloud (2021-2025)</p>
+    </div>
+    
+  <div class="pdf-viewer">
+    <embed src="portfolio.pdf" type="application/pdf" width="100%" height="800px" />
+  </div>
+    
+    
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
