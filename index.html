@@ -97,12 +97,12 @@
       width: 100%;
     }
 
- h1,h2 {
+     h1,h2 {
       text-align: center;
       margin-bottom: 0.1em;
       margin-top: 0.1em;
       color: #FDF5E6;
- }
+     }
   
     a {
       color: #ADD8E6;
@@ -112,6 +112,26 @@
     a:hover {
       text-decoration: underline;
     }
+
+  .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 90%;
+  }
+
+  .centered-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
   </style>
 </head>
 <body>  
@@ -132,10 +152,15 @@
       <h1>Greetings,</h1>
       <h2>Welcome to my personal page :)</h2>
     </div>
+
+    <div class="centered-image">
+      <img src="description.png" alt="Description" />
+    </div>
     
   </div>
 </body>
 </html>
+
 
 
 
